@@ -23,31 +23,15 @@ using std::endl;
 using void_func_ptr = void (*)();
 using int_func_ptr = int (*)(const char**, void_func_ptr);
 
-
-typedef struct Menu {
+typedef struct Menu 
+{
     void_func_ptr functions[MENU_OPTIONS_LENGTH];
     const char* strs[MENU_OPTIONS_LENGTH];
 };
 
+// emulate the same functionality as system("pause") thats on windows
 void systemPause();
 
+// used to get line without them clicking enter, alternative to <ncurses>, found from https://stackoverflow.com/questions/421860/capture-characters-from-standard-input-without-waiting-for-enter-to-be-pressed
 char getch(); // 
 
-void displayMenu(const char* strArr[MENU_OPTIONS_LENGTH], void_func_ptr funcArr[MENU_OPTIONS_LENGTH]);
-
-int defaultMenuNav(const char* strArr[MENU_OPTIONS_LENGTH], void_func_ptr funcArr[MENU_OPTIONS_LENGTH]);
-
-int fancyMenu(const char* strArr[MENU_OPTIONS_LENGTH], void_func_ptr funcArr[MENU_OPTIONS_LENGTH]);
-
-
-void displayGameRules(void);
-
-void playGame(void);
-
-void loadPreviousGame(void);
-
-void addCommand(void);
-
-void removeCommand(void);
-
-void exitApp(void);
