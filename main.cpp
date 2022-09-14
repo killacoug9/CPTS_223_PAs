@@ -29,6 +29,17 @@ this a poor design decision? You will discuss this as part of the assignment!
 See the “Other Requirements” section. 
 */
 
+/*
+each spot in the list is gonna habe
+    command
+    desc
+    is_active
+
+way to shuffle linked list? thats better than randoomization
+    have length. Find rand, then make that choice a added to a new list. remove from old list. Decrement Lis len 
+
+*/
+
 #include "appWrapper.cpp"
 
 int main(int argc, char *argv[]) {
