@@ -17,19 +17,6 @@ public:
 
 
 private:
-    // Menu menuListObj = {
-    //     .functions = {
-    //     }, 
-    //     .strs = {
-    //         "Game Rules",
-    //         "Play Game",
-    //         "Load Previous Game",
-    //         "Add Command",
-    //         "Remove Command",
-    //         "Exit"
-    //     }
-    // };
-
      Menu menuListObj = {
         .functions = {
             &AppWrapper::displayGameRules, 
@@ -49,13 +36,6 @@ private:
         }
     };
 
-    /*
-            AppWrapper::playGame, 
-            AppWrapper::loadPreviousGame, 
-            AppWrapper::addCommand, 
-            AppWrapper::removeCommand, 
-            AppWrapper::exitApp
-    */
     int_func_ptr menuDisplayMethod;
     
     // called by run(). Runs the application by displaying menu and then calling the appropriate user selction func

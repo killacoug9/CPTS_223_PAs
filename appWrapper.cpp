@@ -22,13 +22,6 @@ AppWrapper::AppWrapper(bool isFancyMenu)
         { this->menuDisplayMethod = (int_func_ptr)&fancyMenu; }
     else
         { this->menuDisplayMethod = (int_func_ptr)&defaultMenuNav; }
-
-    // this->menuListObj.functions[0] = &AppWrapper::displayGameRules; 
-    // this->menuListObj.functions[1] = &AppWrapper::playGame; 
-    // this->menuListObj.functions[2] = &AppWrapper::loadPreviousGame;
-    // this->menuListObj.functions[3] = &AppWrapper::addCommand;
-    // this->menuListObj.functions[4] = &AppWrapper::removeCommand;
-    // this->menuListObj.functions[5] = &AppWrapper::exitApp;
 }
 
 int AppWrapper::run() 

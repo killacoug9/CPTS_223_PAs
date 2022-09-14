@@ -13,8 +13,6 @@
 #include <unistd.h>
 #include <termios.h>
 
-//#include "appWrapper.hpp"
-
 using namespace std;
 using std::cout;
 using std::endl;
@@ -26,15 +24,7 @@ class AppWrapper;
 /* Menu Options */
 
 using void_func_ptr = void (AppWrapper::*)();
-//using functional_ptr = std::function<void(void)> ;
-
 using int_func_ptr = int (*)(const char**);
-
-// typedef struct Menu 
-// {
-//     functional_ptr functions[MENU_OPTIONS_LENGTH];
-//     const char* strs[MENU_OPTIONS_LENGTH];
-// };
 
 typedef struct Menu 
 {
