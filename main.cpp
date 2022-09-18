@@ -40,12 +40,11 @@ way to shuffle linked list? thats better than randoomization
 
 */
 
-#include "appWrapper.cpp"
+#include "./components/headers/AppWrapper.hpp"
 
 int main(int argc, char *argv[]) {
     AppWrapper app(true);
     app.run();
-
 
     return 0;
 }
