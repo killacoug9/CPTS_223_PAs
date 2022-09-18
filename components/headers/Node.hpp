@@ -4,9 +4,6 @@
 #include <string>
 #include <fstream>
 
-#define EXERCISE_TYPE ExercisePlan
-#define DIET_TYPE DietPlan
-
 using std::cout;
 using std::string;
 using std::endl;

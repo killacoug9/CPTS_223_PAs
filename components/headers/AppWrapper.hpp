@@ -1,7 +1,8 @@
 #pragma once
 
 //#include "..../appFunctions.hpp"
-#include "./appFunctions.hpp"
+//#include ".../appFunctions.hpp"
+#include "../../appFunctions.hpp"
 #include "./List.hpp"
 
 #define NUM_POSSIBLE_CHOICES 3
@@ -62,7 +63,7 @@ private:
     };
     int_func_ptr menuDisplayMethod;
     int maxQuestionsAmount;
-    LinkedList* gameDeck;
+    List* gameDeck;
     Profile profiles[PROFILES_LENGTH];
     Command Commands[];
 

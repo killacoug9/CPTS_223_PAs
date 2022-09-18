@@ -1,4 +1,4 @@
-#include "./headers/List.hpp"
+#include "../headers/List.hpp"
 
 template <class T>
 List<T>::List(Node<T>* newpHead, Node<T>* newpTail) {
